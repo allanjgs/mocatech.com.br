@@ -2,21 +2,16 @@ import Link from "next/link";
 
 //icones
 import {
-  RiYoutubeLine,
+  RiMailLine,
+  RiLinkedinBoxLine,
   RiInstagramLine,
   RiFacebookBoxLine,
-  RiDragMoveLine,
-  RiBehanceLine,
-  RiPinterestLine,
-  RiDribbbleLine,
+  RiGithubLine
 } from "react-icons/ri";
 
 const Socials = () => {
   return (
-    <div className="items-center flex gap-x-5 text-lg">
-      <Link href={""} className="hover:text-accent transition-all duration-300">
-        <RiYoutubeLine />
-      </Link>
+    <div className="items-center flex gap-x-5 text-xl xl:text-3xl">
       <Link href={""} className="hover:text-accent transition-all duration-300">
         <RiInstagramLine />
       </Link>
@@ -24,13 +19,13 @@ const Socials = () => {
         <RiFacebookBoxLine />
       </Link>
       <Link href={""} className="hover:text-accent transition-all duration-300">
-        <RiDribbbleLine />
+        <RiGithubLine />
       </Link>
       <Link href={""} className="hover:text-accent transition-all duration-300">
-        <RiBehanceLine />
+        <RiLinkedinBoxLine />
       </Link>
       <Link href={""} className="hover:text-accent transition-all duration-300">
-        <RiPinterestLine />
+        <RiMailLine />
       </Link>
     </div>
   );

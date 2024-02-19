@@ -11,16 +11,17 @@ import {
 // nav data
 export const navData = [
   { name: "home", path: "/", icon: <HiHome /> },
-  { name: "about", path: "/about", icon: <HiUser /> },
-  { name: "services", path: "/services", icon: <HiRectangleGroup /> },
-  { name: "work", path: "/work", icon: <HiViewColumns /> },
+  { name: "Quem Somos", path: "/about", icon: <HiUser /> },
+  { name: "Nossos Serviços", path: "/services", icon: <HiRectangleGroup /> },
+  { name: "Nosso Portifolio", path: "/work", icon: <HiViewColumns /> },
+  // {
+  // habilitar quando colocar tiver área de testemunhas
+  //   name: "testimonials",
+  //   path: "/testimonials",
+  //   icon: <HiChatBubbleBottomCenterText />,
+  // },
   {
-    name: "testimonials",
-    path: "/testimonials",
-    icon: <HiChatBubbleBottomCenterText />,
-  },
-  {
-    name: "contact",
+    name: "Contato",
     path: "/contact",
     icon: <HiEnvelope />,
   },
@@ -41,13 +42,12 @@ const Nav = () => {
   h-max bottom-0 mt-auto xl:right-[2%] z-50 top-0 w-full xl:w-16 xl:max-w-md xl:h-screen "
     >
       {/* inner */}
-      <div className="flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-[80px] bg-white/10 xl:h-max py-8 backdrop-blur-sm text-3xl xl:text-xl xl:rounded-full ">
+      <div className="flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-[80px] bg-white/10 xl:h-max py-8 backdrop-blur-sm text-3xl xl:rounded-full ">
         {navData.map((link, index) => {
           return (
             <Link
-              className={`${
-                link.path === pathname && "text-accent"
-              } relative flex items-center group hover:text-accent transition-all duration-300`}
+              className={`${link.path === pathname && "text-accent"
+                } relative flex items-center group hover:text-accent transition-all duration-300`}
               href={link.path}
               key={index}
             >
@@ -56,15 +56,15 @@ const Nav = () => {
                 <div className="bg-white relative flex text-primary items-center p-[6px] rounded-[3px]">
                   <div className="text-[12px] leading-none font-semibold capitalize">
                     {link.name}
-                    </div>
-                    {/* triangle */}
-                    <div className="border-solid border-l-white border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2"></div>
+                  </div>
+                  {/* triangle */}
+                  <div className="border-solid border-l-white border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2"></div>
                 </div>
               </div>
 
               {/* icones */}
               <div>{link.icon}</div>
-            </Link>          );
+            </Link>);
         })}
       </div>
     </nav>

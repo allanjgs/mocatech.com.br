@@ -1,4 +1,3 @@
-
 //import 
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -15,7 +14,6 @@ import { FaQuoteLeft } from 'react-icons/fa'
 
 //image
 import Image from 'next/image';
-import { FaQuateLeft } from 'react-icons/fa';
 
 // testimonial data
 const testimonialData = [

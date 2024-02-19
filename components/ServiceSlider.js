@@ -23,30 +23,31 @@ import { FreeMode, Pagination } from 'swiper'
 // data
 const serviceData = [
   {
-    icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
     icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Criação de Sites',
+    description: 'Criamos sites incríveis que cativam e destacam sua marca.',
   },
   {
     icon: <RxRocket />,
     title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Seja encontrado, coloque sua marca no topo das buscas.',
   },
+  {
+    icon: <RxPencil2 />,
+    title: 'UX/UI Design',
+    description: 'Design intuitivo, excepcional, lindamente funcional.',
+  },
+  {
+    icon: <RxCrop />,
+    title: 'Soluções de TI',
+    description: 'Soluções completas de TI para sua empresa, do suporte à consultoria.',
+  },
+  // {
+  //   icon: <RxReader />,
+  //   title: 'Marketing Digital',
+  //   description: 'Estratégias inovadoras e personalizadas, resultados surpreendentes.  ',
+  // },
+
 ];
 
 const ServiceSlider = () => {
@@ -69,19 +70,19 @@ const ServiceSlider = () => {
         clickable: true
       }}
       modules={[FreeMode, Pagination]}
-      className='h-60 sm:h-80'
+      className='h-64 sm:h-[420px]'
     >
       {serviceData.map((item, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className='bg-[#412f7b]/15 h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group 
-            cursor-pointer houver:bg-[rgba(89,65,269,0.25)] transition-all duration-300'>
+            <div className='bg-[#2a3f54]/25 h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group 
+            cursor-pointer houver:bg-[#446689] transition-all duration-300'>
               {/* icones */}
               <div className='text-4xl text-accent mb-4'>{item.icon}</div>
               {/* titulo e descrição */}
               <div className='mb-8'>
                 <div className='mb-2 text-lg'>{item.title}</div>
-                <p className='max-w-[350px] leading-normal'>{item.description}</p>
+                <p className='max-w-[350px] xl:h-40 leading-normal'>{item.description}</p>
               </div>
               {/* arrow */}
               <div className='text-3xl'>

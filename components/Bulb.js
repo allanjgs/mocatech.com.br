@@ -1,8 +1,7 @@
-//next image
 import Image from "next/image";
 
 const Bulb = () => {
-  return <div className="absolute -left-36 -bottom-12 rotate-12 mix-blend-color-dodge animate-pulse duration-75 z-10 w-52 xl:w-72">
+  return <div className="absolute -left-36 -bottom-12 rotate-12 mix-blend-difference animate-pulse duration-75 z-10 w-52 xl:w-72">
     <Image
       src={'/bulb.png'}
       width={260}

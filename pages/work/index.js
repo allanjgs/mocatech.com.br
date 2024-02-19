@@ -6,11 +6,12 @@ import Circles from './../../components/Circles';
 // framer motion
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants'
+import Botao from '../../components/Botao';
 
 
 const Work = () => {
   return (
-    <div className='h-full bg-primary/30 py-36 flex items-center'>
+    <div className='h-full bg-primary/90 py-36 flex items-center'>
       <Circles />
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row gap-x-8'>
@@ -23,16 +24,19 @@ const Work = () => {
               exit='hidden'
               className='h2 xl:mt-12'
             >
-              Nossos Trabalhos <span className='text-accent'>.</span>
+              Nossos <span className='text-accent'>Trabalhos.</span>
             </motion.h2>
-            <motion.p
+            <motion.div
               variants={fadeIn('up', 0.4)}
               initial="hidden"
               animate='show'
               exit='hidden'
-              className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium qui quos inventore quis blanditiis perferendis ullam.
-            </motion.p>
+              className='mb-4 max-w-[400px] mx-auto lg:mx-0 lg:text-xl '>
+              <p>
+                Você quer ter um site que seja bonito, funcional e que atraia clientes?
+              </p>
+              <Botao />
+            </motion.div>
           </div>
           {/* slider */}
           <motion.div
@@ -41,7 +45,7 @@ const Work = () => {
             animate='show'
             exit='hidden'
             className='w-full xl:max-w-[65%]'
-            >
+          >
             <WorkSlider />
           </motion.div>
         </div>
