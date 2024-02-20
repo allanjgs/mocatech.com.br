@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }) {
     <Layout>
       <Head>
         {/* Adicione as informações do título e descrição aqui */}
-        <title>Mocatech</title>
+        <title>  Mocatech</title>
         <meta name="description" content="Desenvolvedor de Sites" />
         <link rel="icon" href="/favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/favicon.png" type="image/png" />
