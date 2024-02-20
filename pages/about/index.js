@@ -107,7 +107,7 @@ import Whatsapp from "../../components/Whatsapp";
 
 const About = () => {
   const [index, setIndex] = useState(0)
-  return <div className="h-full bg-primary/90 py-32 text-center xl:text-left">
+  return <div className="h-full bg-primary/90 py-32 text-center lg:text-left">
     <Circles />
     {/* Avatar img */}
     <motion.div
@@ -115,11 +115,11 @@ const About = () => {
       initial='hidden'
       animate='show'
       exit='hidden'
-      className="hidden xl:flex absolute bottom-0 -left-80">
+      className="hidden md:flex absolute bottom-0 -left-80">
       <Avatar />
     </motion.div>
 
-    <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+    <div className="container mx-auto h-full flex flex-col items-center lg:flex-row gap-x-6">
       {/* texto */}
       <div className="flex-1 flex flex-col justify-center">
         <motion.h2
@@ -127,13 +127,13 @@ const About = () => {
           initial='hidden'
           animate='show'
           exit='hidden'
-          className="h2 text-lg lg:text-4xl">Descubra a <br /><span className="text-accent uppercase tracking-[2px] text-2xl lg:text-7xl"> Mocatech</span></motion.h2>
+          className="h2 text-lg lg:text-4xl">Descubra a <br /><span className="text-accent uppercase tracking-[2px] text-2xl lg:text-5xl xl:text-7xl"> Mocatech</span></motion.h2>
         <motion.p
           variants={fadeIn('right', 0.5)}
           initial='hidden'
           animate='show'
           exit='hidden'
-          className="max-w-lg mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 z-40 text-sm lg:text-lg text-justify">
+          className="max-w-xl mx-auto xl:mx-0 mb-2 xl:mb-12 px-2 xl:px-0 z-40 text-sm xl:text-xl text-justify">
           Explore o universo tecnológico com a Mocatech, uma empresa com 14 anos de experiência no ramo de tecnologia,
           especializada em desenvolvimento de sites e soluções completas para empresas. Contamos com uma equipe qualificada,
           dedicada a oferecer soluções inovadoras e personalizadas, adaptadas com precisão às necessidades de cada cliente
@@ -149,8 +149,8 @@ const About = () => {
           initial='hidden'
           animate='show'
           exit='hidden'
-          className="flex md:max-w-none mx-auto xl:mx-0">
-          <div className="flex flex-1 xl:gap-x-6 gap-x-2">
+          className="flex md:max-w-none mx-auto lg:mx-0">
+          <div className="flex flex-1 lg:gap-x-6 gap-x-2">
             {/* Anos de experiencia */}
             <div className="relative flex-1 after:w-1 after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
               <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
@@ -189,19 +189,19 @@ const About = () => {
         initial='hidden'
         animate='show'
         exit='hidden'
-        className="hidden md:flex  flex-col w-full xl:max-w-[48%] h-[480px]">
-        <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
+        className="hidden md:flex  flex-col w-full lg:max-w-[48%] h-[480px] mt-32">
+        <div className="flex gap-x-4 lg:gap-x-8 mx-auto lg:mx-0 mb-4">
           {aboutData.map((item, itemIndex) => {
             return <div
               key={itemIndex}
               className={`${index === itemIndex && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
-                } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                } cursor-pointer capitalize lg:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
               onClick={() => setIndex(itemIndex)}
             >
               {item.title}</div>;
           })}
         </div>
-        <div className=" py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+        <div className=" flex flex-col gap-y-2 lg:gap-y-4 items-center lg:items-start">
           {aboutData[index].info.map((item, itemIndex) => {
             return (
               <div key={itemIndex} className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60">
@@ -224,7 +224,7 @@ const About = () => {
             );
           })}
         </div>
-        <div className="flex flex-col w-full xl:max-w-[80%] h-[600px] mt-12">
+        <div className="flex flex-col w-full lg:max-w-full h-[600px] mt-12">
           <h1 className="mb-4 text-lg">Deixei seu e-mail e <span className="text-accent">receba nossa apresentação.</span></h1>
           <form className="flex-1 flex flex-col gap-6 w-full mx-auto">
             <div className="flex gap-x-6 w-full">

@@ -16,19 +16,19 @@ import Whatsapp from "../components/Whatsapp";
 const Home = () => {
   return (
     <div className="bg-primary h-full">
-      <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-lighten  translate-z-0 ">
+      <div className="bg-none lg:bg-explosion lg:bg-cover lg:bg-right lg:bg-no-repeat w-full h-full absolute mix-blend-lighten  translate-z-0 ">
         {/* texto */}
         <div className="w-full h-full ">
-          <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
+          <div className="text-center flex flex-col justify-center xl:pt-40 lg:text-left h-full container mx-auto">
             {/* title */}
             <motion.div
               variants={fadeIn("down", 0.2)}
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="lg:text-7xl text-2xl"
+              className="lg:text-5xl xl:text-7xl text-2xl"
             >
-              <h1 className="text-5xl lg:text-8xl font-semibold uppercase leading-[1] ">
+              <h1 className="text-5xl lg:text-6xl xl:text-8xl font-semibold uppercase leading-[1] ">
                 MOCATECH
               </h1>
               <span className='text-white mr-4'> seu</span>
@@ -48,25 +48,24 @@ const Home = () => {
               />
             </motion.div>
             {/* subtitilo */}
+
             <motion.p
               variants={fadeIn("down", 0.3)}
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 mt-4 text-xl"
+              className="max-w-sm lg:max-w-xl mx-auto lg:mx-0 mb-10 xl:mb-16 mt-4 text-xl"
             >
               Transformamos ideias em realidade digital.
             </motion.p>
             {/* btn */}
-            <div className="flex justify-center xl:hidden relative pt-4">
-              <ProjectsBtn />
-            </div>
+
             <motion.div
               variants={fadeIn("down", 0.4)}
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="hidden xl:flex className='z-50'"
+              className="hidden lg:flex z-50 "
             >
               <ProjectsBtn  />
             </motion.div>
@@ -93,7 +92,9 @@ const Home = () => {
         <Avatar />
       </motion.div>
       <Whatsapp className='delay-1000' />
+
     </div>
+    
   );
 };
 
