@@ -95,8 +95,14 @@ const Home = () => {
       >
         <Avatar />
       </motion.div>
-
-      <Whatsapp className='delay-1000' />
+      <motion.div
+        variants={fadeIn("down", 1)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+      >
+        <Whatsapp />
+      </motion.div>
       <motion.div
         variants={fadeIn("down", 0.4)}
         initial="hidden"
