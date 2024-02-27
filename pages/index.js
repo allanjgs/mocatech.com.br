@@ -97,9 +97,14 @@ const Home = () => {
       </motion.div>
 
       <Whatsapp className='delay-1000' />
-      <div className="fixed z-50  bottom-[25%] lg:hidden flex gap-x-3 group w-full">
+      <motion.div
+        variants={fadeIn("down", 0.4)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="fixed z-50  bottom-[25%] lg:hidden flex gap-x-3 group w-full">
         <ProjectsBtn className='fixed ' />
-      </div>
+      </motion.div>
 
     </div>
 
