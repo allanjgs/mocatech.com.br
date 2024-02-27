@@ -96,7 +96,7 @@ const Home = () => {
         <Avatar />
       </motion.div>
       <motion.div
-        variants={fadeIn("down", 1)}
+        variants={fadeIn("up", 2.4)}
         initial="hidden"
         animate="show"
         exit="hidden"
@@ -104,7 +104,7 @@ const Home = () => {
         <Whatsapp />
       </motion.div>
       <motion.div
-        variants={fadeIn("down", 0.4)}
+        variants={fadeIn("up", 0.4)}
         initial="hidden"
         animate="show"
         exit="hidden"
