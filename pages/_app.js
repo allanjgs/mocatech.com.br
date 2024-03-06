@@ -36,7 +36,7 @@ function MyApp({ Component, pageProps }) {
       {/* Google Tag Manager (noscript) */}
       <noscript>
         <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-5LFXZ33G"
+          src="https://www.googletagmanager.com/gtag/js?id=G-8D5M4XV59S"
           height="0"
           width="0"
           style={{ display: 'none', visibility: 'hidden' }}
@@ -53,7 +53,7 @@ function MyApp({ Component, pageProps }) {
             var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
             j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
             f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-5LFXZ33G');
+          })(window,document,'script','dataLayer','G-8D5M4XV59S');
         `}
       </Script>
       {/* End Google Tag Manager */}
