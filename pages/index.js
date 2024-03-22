@@ -27,7 +27,7 @@ const Home = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="lg:text-5xl xl:text-7xl text-2xl"
+              className="lg:text-5xl xl:text-7xl text-2xl pt-52"
             >
               <h1 className="text-5xl lg:text-6xl xl:text-8xl font-semibold uppercase leading-[1] ">
                 MOCATECH
