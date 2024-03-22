@@ -17,6 +17,7 @@ const Header = () => {
                 height={48}
                 alt=""
                 priority={true}
+                className="hidden"
               />
             </Link>
             {/* social */}
